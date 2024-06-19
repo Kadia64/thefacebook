@@ -2,39 +2,146 @@
     --font: tahoma;
     --font-size: 11px;
     --annual-font-size: 10.7px;
+    --page-width: 680px;
+    --lightblue: rgb(123, 168, 237);
+    --hover-lightblue: rgb(134, 197, 231);
+    --darkblue: rgb(59, 88, 152);
+    --button-lightblue: rgb(83, 148, 232);
+    --input-blue: rgb(200, 200, 230);
 }
 
-/* Static \/ */
+/* STATIC */
 
-
+/* Font */
+.main-top-content div a,
+.left-login-box label,
+.left-login-box input,
+.left-login-buttons input,
+.left-login-buttons a,
+.bottom-content a,
+.bottom-content p,
+.window-text-left,
+.window-text-right
+{
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
 
 /* Lightblue Link */
-
+.lightblue-link 
+{
+    color: var(--lightblue);
+    text-decoration: none;
+}
+.lightblue-link:hover
+{
+    color: var(--hover-lightblue);
+    text-decoration: underline;
+}
 
 
 /* Blue Button */
-
+.left-login-button,
+.left-login-buttons a
+{
+    font-family: var(--font);
+    font-size: var(--font-size);
+    outline: none;
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-lightblue);
+    margin: 0px 1px 0px 1px;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid transparent!important;
+    outline: 2px ridge!important;
+    text-align: center;
+}
+.left-login-button:hover,
+.left-login-buttons a:hover
+{
+    cursor: pointer;
+    outline: 1.5px ridge!important;
+}
 
 
 /* Text Input */
-
+.left-login-box input
+{
+    font-family: var(--font);
+    font-size: var(--font-size);
+    background-color: var(--input-blue);
+    border: 1px solid black;
+}
 
 
 /* Bullet Points */
 
 
 
-/*  Static /\ */
+
+/* Template Content \/ */
+.main-pagebox {
+    border: 1px solid var(--darkblue);
+    width: var(--page-width);
+    margin: 0 auto;
+}
+.main-page-flexbox {
+    padding: 2px;
+    display: flex;
+    gap: 2px;
+}
+.right-main-window {
+    flex: 3.48;
+    align-self: flex-end;
+    border: 1px solid var(--darkblue);
+}
+.window-text {
+    background-color: var(--darkblue);
+    color: white;
+    padding: 2.5px 2.5px 3px 2.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-main-window h4 {
+    font-family: var(--font);
+    font-weight: bold;
+    text-align: center;
+}
+/* Template Content /\ */
 
 
 
 /* Top Content \/ */
-
+.main-top-box {
+    display: flex;
+    background-color: var(--darkblue);
+    height: 71px;
+}
+.main-top-content div {
+    margin-top: -3px;
+    margin-left: 4px;
+}
+.main-top-content div a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 3px 0px 3px;
+}
+.main-top-content div a:hover {
+    text-decoration: underline;
+}
 /* Top Content /\ */
 
 
 /* Bottom Content \/ */
-
+.bottom-content {
+    line-height: 4px;
+    padding: 12px 0px 2px 0px;
+    text-align: center;
+}
+.bottom-content a {
+    padding: 0px 3px 0px 3px;
+}
 /* Bottom Content /\ */
 
 
@@ -44,6 +151,32 @@
 
 
 /* Left Login Form \/ */
+.left-login-form {
+    flex: 1;
+    align-self: flex-start;
+    border: 1px dashed var(--lightblue);
+    padding-top: 3px;
+}
+.left-login-form label {
+    float: right!important;
+    margin-right: 5px;
+}
+.left-login-box {
+    text-align: center;
+}
+.left-email-input,
+.left-password-input {
+    background-color: var(--input-color);
+    width: 135px;
+    border: 1px solid black;
+}
+.left-login-buttons {
+    padding: 8px 8px 12px 12px;
+    text-align: center;
+}
+.left-login-buttons a {
+    margin-left: 5px;
+}
 
 /* Left Login Form /\ */
 
