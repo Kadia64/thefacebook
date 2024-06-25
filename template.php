@@ -11,7 +11,10 @@
 <html lang="en">
 <head>
     <?php HeaderInfo('Template'); ?>
-    <?php echo GetPageCSS(''); ?>
+    <?php echo GetPageCSS('welcome'); ?>
+    <style>
+        
+    </style>
 </head>
 <body>
     <div class="main-pagebox">

@@ -65,19 +65,35 @@ function LeftLoginForm() {
                     <input type="password" id="left-password" name="password" class="left-password-input" required>
                 </div>
                 <div class="left-login-buttons">
-                    <input type="submit" name="left-login-button" value="login" class="left-login-button">
-                    <a href="'.$root.'pages/logout/Register.php">register</a>
+                    <input type="submit" name="left-login-button" value="login" class="left-login-button lightblue-button">
+                    <a href="'.$root.'pages/logout/Register.php" class="lightblue-button">register</a>
                 </div>
             </form>
         </div>
     ';
 }
 function LeftLoginLinks() {
-
+    $root = $_SESSION['relative-path'];
+    echo '
+        <div class="left-login-links">
+            <div class="left-login-flexbox">
+                <div>
+                    <a href="'.$root.'pages/logout/Welcome.php" class="lightblue-link">[ main ]</a>
+                </div>
+                <div>
+                    <a href="'.$root.'pages/logout/Login.php" class="lightblue-link">[ login ]</a>
+                </div>
+                <div>
+                    <a href="'.$root.'pages/logout/Register.php" class="lightblue-link">[ register ]</a>
+                </div>
+            </div>
+        </div>
+    ';
 }
 function LeftLinksSearch() {
 
 }
+
 function WindowText($left_text, $right_text = null, $return = false) {
     $right_text = ($right_text != null) ? '<span class="window-text-right">'.$right_text.'</span>' : null;
     $content = '
@@ -90,6 +106,15 @@ function WindowText($left_text, $right_text = null, $return = false) {
     if (!$return) {
         echo $content;
     } else return $content;
+}
+function DisplayLink($text, $page, $type) {
+    $root = $_SESSION['relative-path'];
+    $class = match($type) {
+        'button' => 'class="lightblue-button"',
+        'lightblue' => 'class="lightblue-link"'
+    };
+
+    return '<a href="'.$root.$page.'" '.$class.'>'.$text.'</a>';    
 }
 /* Static */
 
@@ -119,12 +144,66 @@ function GetPageCSS($page) {
     $style = '<style>';
     $style .= match ($page) {
         'welcome' => '
-            div {
-                margin: 0;
+            .welcome-page-window {
+                width: calc(var(--page-width) - 240px);
+                margin: 0 auto;
+            }
+            .welcome-page-content ul {
+                margin: -10px 0px 0px -15px;            
+            }
+            .welcome-page-buttons {
+                text-align: center;
+                padding-bottom: 10px;
             }
         ',
         'login' => '
-        
+            .login-page-window {
+                width: calc(var(--page-width) - 240px);
+                margin: 0 auto;
+            }
+            .login-page-content {
+                display: flex;
+                flex-direction: column;
+            }
+            .login-page-form {
+                padding-top: 20px;
+            }
+            .login-page-form div {
+                width: 280px;
+                margin: 0 auto;
+                flex: 1;
+                display: grid;
+                grid-template-columns: 23% 78%;
+                row-gap: 3px;
+            }
+            .login-page-form div div {
+                height: 20px;
+            }
+            .login-page-form div div:nth-child(odd) {
+                margin-top: 2px;
+            }
+            .login-page-form div div label {
+                padding-top: -10px;
+            }
+            .email-input,
+            .password-input {
+                width: 180px;
+            }
+            .login-buttons {
+                margin-top: 10px!important;
+                width: 100px!important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+            .login-buttons div {
+                flex: 1;
+            }
+            .login-page-text {
+                margin: 0 auto;
+                flex: 1;
+            }
         ',
         'register' => '
         

@@ -10,6 +10,11 @@
     --input-blue: rgb(200, 200, 230);
 }
 
+.why {
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
+
 /* STATIC */
 
 /* Font */
@@ -18,10 +23,16 @@
 .left-login-box input,
 .left-login-buttons input,
 .left-login-buttons a,
+.left-login-links div a,
 .bottom-content a,
 .bottom-content p,
 .window-text-left,
-.window-text-right
+.window-text-right,
+.welcome-page-content p,
+.welcome-page-content ul li,
+.login-page-form,
+.login-page-text,
+.register-page-content p
 {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -39,10 +50,8 @@
     text-decoration: underline;
 }
 
-
 /* Blue Button */
-.left-login-button,
-.left-login-buttons a
+.lightblue-button
 {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -56,8 +65,7 @@
     outline: 2px ridge!important;
     text-align: center;
 }
-.left-login-button:hover,
-.left-login-buttons a:hover
+.lightblue-button:hover
 {
     cursor: pointer;
     outline: 1.5px ridge!important;
@@ -65,7 +73,9 @@
 
 
 /* Text Input */
-.left-login-box input
+.left-login-box input,
+.login-page-form .email-input,
+.login-page-form .password-input
 {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -182,7 +192,21 @@
 
 
 /* Left Logged Out Links \/ */
-
+.left-login-links {
+    flex: 1;
+    align-self: flex-start;
+    border: 1px dashed var(--lightblue);
+}
+.left-login-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0px 8px 0px;
+}
+.left-login-flexbox div {
+    flex: 1;
+}
 /* Left Logged Out Links /\ */
 
 
