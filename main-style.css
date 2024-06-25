@@ -10,6 +10,7 @@
     --input-blue: rgb(200, 200, 230);
 }
 
+
 .why {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -32,10 +33,16 @@
 .welcome-page-content ul li,
 .login-page-form,
 .login-page-text,
-.register-page-content p
+.register-page-form form label
 {
     font-family: var(--font);
     font-size: var(--font-size);
+}
+.register-page-content p,
+.register-page-form form div label 
+{
+    font-family: var(--font);
+    font-size: var(--annual-font-size);
 }
 
 /* Lightblue Link */
@@ -75,14 +82,22 @@
 /* Text Input */
 .left-login-box input,
 .login-page-form .email-input,
-.login-page-form .password-input
+.login-page-form .password-input,
+.register-page-username,
+.register-education-status-input,
+.register-email-input,
+.register-password-input
 {
     font-family: var(--font);
     font-size: var(--font-size);
     background-color: var(--input-blue);
     border: 1px solid black;
 }
-
+.window-text-box
+{    
+    font-family: var(--font);
+    font-size: var(--annual-font-size);
+}
 
 /* Bullet Points */
 
@@ -112,6 +127,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.window-text-box {
+    border: 1px solid var(--darkblue);
+    width: calc(var(--page-width) - 240px)
+}
+.window-text-box div p:last-child {
+    width: calc(var(--page-width) - 280px);
 }
 .right-main-window h4 {
     font-family: var(--font);

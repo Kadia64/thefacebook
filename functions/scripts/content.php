@@ -206,7 +206,49 @@ function GetPageCSS($page) {
             }
         ',
         'register' => '
-        
+            .register-page-window {
+                width: calc(var(--page-width) - 220px);
+                margin: 0 auto;
+            }
+            .register-page-form {            
+                width: calc(var(--page-width) - 360px);
+                margin: 0 auto;
+            }
+            .register-page-grid {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-row-gap: 2px;
+            }
+            .register-page-terms-box {
+                display: flex;
+                gap: 5px;
+            }
+            .register-page-terms-box input,
+            .register-page-terms-box a {
+                flex: 1;
+            }
+            .register-page-grid input {
+                width: 160px;
+            }
+            .register-page-grid select {
+                width: 120px;
+            }
+            .register-page-bottom-box div:last-child {
+                display: flex;
+                margin-left: 8px;
+                margin-top: -12px;
+            }        
+            .register-page-bottom-box div:last-child p:first-child {
+                flex: 0.5;
+                margin-top: 13px;            
+            }
+            .register-page-bottom-box div:last-child p:last-child {
+                flex: 12;
+            }
+            .register-page-button {
+                padding: 10px;
+                text-align: center;
+            }
         ',
         'registerabout' => '
         
