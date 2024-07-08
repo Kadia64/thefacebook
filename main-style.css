@@ -33,7 +33,10 @@
 .welcome-page-content ul li,
 .login-page-form,
 .login-page-text,
-.register-page-form form label
+.register-page-form form label,
+.about-you-text p,
+.about-you-grid p,
+.about-you-grid label
 {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -86,7 +89,10 @@
 .register-page-username,
 .register-education-status-input,
 .register-email-input,
-.register-password-input
+.register-password-input,
+.about-you-grid input,
+.about-you-grid select,
+.about-you-grid textarea
 {
     font-family: var(--font);
     font-size: var(--font-size);
@@ -131,9 +137,6 @@
 .window-text-box {
     border: 1px solid var(--darkblue);
     width: calc(var(--page-width) - 240px)
-}
-.window-text-box div p:last-child {
-    width: calc(var(--page-width) - 280px);
 }
 .right-main-window h4 {
     font-family: var(--font);

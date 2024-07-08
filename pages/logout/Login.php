@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
     <?php HeaderInfo("Login"); ?>
-    <?php echo GetPageCSS('login'); ?>    
+    <?php echo GetPageCSS('login'); ?>
 </head>
 <body>
     <div class="main-pagebox">
@@ -27,6 +27,7 @@
 
             <!-- Right Window -->
             <div class="right-main-window">
+                <h4>[ Login ]</h4>
                 <div class="login-page-window">
                     <div class="login-page-content">
                         <form method="POST" action="" class="login-page-form">

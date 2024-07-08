@@ -166,7 +166,7 @@ function GetPageCSS($page) {
                 flex-direction: column;
             }
             .login-page-form {
-                padding-top: 20px;
+                
             }
             .login-page-form div {
                 width: 280px;
@@ -250,8 +250,43 @@ function GetPageCSS($page) {
                 text-align: center;
             }
         ',
-        'registerabout' => '
-        
+        'register_about' => '
+            .about-you-window {
+                width: calc(var(--page-width) - 290px);
+                margin: 0 auto;
+            }
+            .about-you-text {
+                text-align: center;
+            }
+            .about-you-window {
+                margin-top: -5px;
+            }
+            .about-you-grid {
+                margin-left: 65px;
+                display: grid;
+                grid-template-columns: 39% 50%;
+                grid-row-gap: 2.5px;
+            }
+            .about-you-grid div {
+                text-align: left;
+            }
+            .about-you-grid div p {
+                margin: 0;
+            }
+            .about-you-grid div textarea {
+                resize: none;
+                margin-top: 2px;
+            }
+            .about-you-grid div input {
+                width: 120px;
+            }
+            .about-you-grid div select {
+                width: 110px;
+            }
+            .about-you-register-button {
+                padding: 10px;
+                text-align: center;
+            } 
         ',
         'about' => '
         
@@ -259,7 +294,7 @@ function GetPageCSS($page) {
         'contact' => '
         
         ',
-        'jobdescriptions' => '
+        'job_descriptions' => '
         
         ',
         'faq' => '
@@ -268,15 +303,15 @@ function GetPageCSS($page) {
         'terms' => '
         
         ',
-        'privacypolicy' => '
+        'privacy_policy' => '
         
         ',
-        'mainprofile' => '
+        'main_profile' => '
         
         ',
         'profile' => '
         
-        ',
+        '
     };
     return $style.'</style>';
 }

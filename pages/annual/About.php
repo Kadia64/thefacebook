@@ -16,24 +16,7 @@
         .about-page-window {
             margin: 0 auto;
             width: calc(var(--page-width) - 240px);
-            display: flex;
-        }
-        .about-page-content {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .about-page-content .window-text-box {
-            flex: 1;
-        }
-        .window-text-box p {
-            margin: 0 auto;
-            padding: 12px;            
-        }
-        .about-home-button {
-            padding: 12px;
-            text-align: center;
-        }
+        }     
     </style>
 </head>
 <body>
@@ -52,26 +35,7 @@
             <div class="right-main-window">
                 <?php WindowText('About Thefacebook'); ?>
                 <h4>[ About ]</h4>
-                <div class="about-page-window">
-                    <div class="about-page-content">                    
-                        <div class="window-text-box">
-                            <?php WindowText('The Project'); ?>
-                            <div>
-                                <p>Thefacebook is an online directory that connects people through social networks at colleges and universities.</p>
-                            </div>
-                        </div>
-                        <div class="window-text-box">
-                            <?php WindowText('The People'); ?>
-                            <p>The People</p>
-                        </div>
-                        <div class="window-text-box">
-                            <?php WindowText('News Coverage'); ?>
-                            <p>news</p>
-                        </div>                        
-                    </div>                                        
-                </div>
-                <div class="about-home-button">
-                    <?php echo DisplayLink('Home', '/pages/logout/Welcome.php', 'button'); ?>
+                <div class="about-page-window">                    
                 </div>
             </div>
 
