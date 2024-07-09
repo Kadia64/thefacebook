@@ -1,7 +1,7 @@
 <?php 
-    $_PATH = '/projects/thefacebook/functions/scripts/';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'content.php';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'session-handler.php';
+    $_PATH = '/projects/thefacebook/functions/';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
     
     session_start();
     CheckTraversal();
@@ -36,7 +36,7 @@
                     <div class="register-page-content">
                         <p>To register for the facebook.com, just fill out the four fields below. You will have a chance to enter additional information and submit a picture once you have registered.</p>
                         <div class="register-page-form">
-                            <form method="POST" action="">
+                            <form method="POST" action="<?php echo $_PATH.'session-registration.php'?>">
                                 <div class="register-page-grid">
                                     <div>
                                         <label>Username:</label>

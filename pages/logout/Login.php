@@ -1,7 +1,7 @@
 <?php 
-    $_PATH = '/projects/thefacebook/functions/scripts/';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'content.php';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'session-handler.php';
+    $_PATH = '/projects/thefacebook/functions/';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
 
     session_start();
     CheckTraversal();
