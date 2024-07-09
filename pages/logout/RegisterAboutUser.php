@@ -1,7 +1,7 @@
 <?php 
-    $_PATH = '/projects/thefacebook/functions/scripts/';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'content.php';
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'session-handler.php';
+    $_PATH = '/projects/thefacebook/functions/';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
     
     session_start();
     CheckTraversal();
@@ -32,7 +32,7 @@
                     <div class="about-you-text">
                         <p>Registering with us is quick and easy. Simply fill out the form below to create your account. Once you've completed the registration process, you'll have access to all the features and benefits of being a member of our community.</p>
                     </div>
-                    <form method="POST" action="">
+                    <form method="POST" action="<?php echo $_PATH.'register-user.php'; ?>">
                         <div class="about-you-grid">
                             <div>
                                 <p><b>Basic Info:</b></p>

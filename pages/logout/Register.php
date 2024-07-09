@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php HeaderInfo('Welcome'); ?>
+    <?php HeaderInfo('Register'); ?>
     <?php echo GetPageCSS('register'); ?>
     <style>
         
@@ -36,7 +36,7 @@
                     <div class="register-page-content">
                         <p>To register for the facebook.com, just fill out the four fields below. You will have a chance to enter additional information and submit a picture once you have registered.</p>
                         <div class="register-page-form">
-                            <form method="POST" action="<?php echo $_PATH.'session-registration.php'?>">
+                            <form method="POST" action="<?php echo $_PATH.'session-registration.php'; ?>">
                                 <div class="register-page-grid">
                                     <div>
                                         <label>Username:</label>
