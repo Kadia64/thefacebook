@@ -5,7 +5,7 @@
     
     session_start();
     CheckTraversal();
-    LoggedOutSession('/pages/logout/Register.php');
+    CheckLoggedOutSessionID('/pages/logout/Register.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

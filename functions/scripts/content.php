@@ -139,6 +139,12 @@ function BuildSchoolsSelection() {
 }
 /* Dynamic */
 
+/* Miscellaneous */
+function ExistingAccountNotification() {
+    
+}
+/* Miscellaneous */
+
 /* Styles */
 function GetPageCSS($page) {
     $style = '<style>';

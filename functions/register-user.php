@@ -43,7 +43,7 @@ $register_info = [
 ];
 
 
-CreateAccount($account_info, $register_info);
+AccountManager::CreateAccount($account_info, $register_info);
 
 // get your id from sql
 $id = 12345;
