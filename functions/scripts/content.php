@@ -93,9 +93,10 @@ function LeftLoginLinks() {
 function LeftLinksSearch() {
 
 }
-function AnnualPageWindow($window_text, $content) {
-    echo '                        
-        <div class="annual-page-window">
+function AnnualPageWindow($window_text, $content, $id = null) {
+    $id =  ($id != null) ? 'id="'.$id.'"' : null;
+    echo '
+        <div class="annual-page-window" '.$id.'>
             '.WindowText($window_text, null, true).'
             <p>'.$content.'</p>
         </div>
@@ -312,7 +313,11 @@ function GetPageCSS($page) {
         
         ',
         'faq' => '
-        
+            .faq-page-window {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
         ',
         'terms' => '
         

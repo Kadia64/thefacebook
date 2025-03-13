@@ -181,7 +181,7 @@
 
 
 /* Annual Content \/ */
-.annual-page-window {
+.annual-page-window, .annual-page-extra {
     flex: 1;
 }
 .annual-page-window {
@@ -194,6 +194,10 @@
     font-size: var(--annual-font-size);
     margin: 0 auto;
     padding: 12px;
+}
+.annual-page-extra li {
+    font-family: var(--font);
+    font-size: var(--annual-font-size);
 }
 /* Annual Content /\ */
 

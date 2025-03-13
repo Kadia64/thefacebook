@@ -19,7 +19,7 @@
         }        
         .annual-page-window:last-child {
             margin-bottom: 20px;
-        }        
+        }
     </style>
 </head>
 <body>
