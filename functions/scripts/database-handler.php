@@ -10,7 +10,6 @@ class DatabaseHandler {
     private static $pdo = null;
     private function __construct() {}
 
-
     public static function getConnection() {
         if (self::$pdo == null) {
 

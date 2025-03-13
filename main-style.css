@@ -100,7 +100,7 @@
     border: 1px solid black;
 }
 .window-text-box
-{    
+{
     font-family: var(--font);
     font-size: var(--annual-font-size);
 }
@@ -181,7 +181,20 @@
 
 
 /* Annual Content \/ */
-
+.annual-page-window {
+    flex: 1;
+}
+.annual-page-window {
+    width: 98%;
+    margin: 0 auto;
+    border: 1px solid var(--darkblue);
+}
+.annual-page-window p {
+    font-family: var(--font);
+    font-size: var(--annual-font-size);
+    margin: 0 auto;
+    padding: 12px;
+}
 /* Annual Content /\ */
 
 

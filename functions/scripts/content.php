@@ -93,6 +93,14 @@ function LeftLoginLinks() {
 function LeftLinksSearch() {
 
 }
+function AnnualPageWindow($window_text, $content) {
+    echo '                        
+        <div class="annual-page-window">
+            '.WindowText($window_text, null, true).'
+            <p>'.$content.'</p>
+        </div>
+    ';
+}
 
 function WindowText($left_text, $right_text = null, $return = false) {
     $right_text = ($right_text != null) ? '<span class="window-text-right">'.$right_text.'</span>' : null;
@@ -310,7 +318,11 @@ function GetPageCSS($page) {
         
         ',
         'privacy_policy' => '
-        
+            .privacy-policy-page-window {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
         ',
         'main_profile' => '
         

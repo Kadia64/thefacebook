@@ -14,6 +14,7 @@ $username = $_SESSION['username'];
 $education_status = $_SESSION['education-status'];
 $password = $_SESSION['password'];
 $password_salt = $_SESSION['password-salt'];
+$cookie_expiration = 0;
 
 $account_info = [
     'username' => $username,
@@ -41,6 +42,7 @@ $register_info = [
     'favorite-movies' => $_POST['favorite-movies'],
     'about-me' => $_POST['about-me']
 ];
+
 
 
 AccountManager::CreateAccount($account_info, $register_info);
