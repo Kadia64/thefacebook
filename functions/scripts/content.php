@@ -320,7 +320,11 @@ function GetPageCSS($page) {
             }
         ',
         'terms' => '
-        
+            .terms-page-window {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
         ',
         'privacy_policy' => '
             .privacy-policy-page-window {
