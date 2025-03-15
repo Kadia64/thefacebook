@@ -304,7 +304,24 @@ function GetPageCSS($page) {
             } 
         ',
         'about' => '
-        
+            .about-page-window {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            div.annual-page-window:last-child ul {
+                list-style-type: none;
+                padding-left: 20px;
+            }
+            div.annual-page-window:last-child ul li {
+                font-family: var(--font);
+                font-size: var(--annual-font-size);
+                line-height: 16px;
+            }
+            .about-page-home-button {
+                padding: 15px;
+                text-align: center;
+            }
         ',
         'contact' => '
         
@@ -331,7 +348,7 @@ function GetPageCSS($page) {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
-            }
+            }            
         ',
         'main_profile' => '
         

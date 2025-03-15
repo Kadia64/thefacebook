@@ -195,9 +195,24 @@
     margin: 0 auto;
     padding: 12px;
 }
+.annual-page-window table {
+    padding: 10px;
+}
+.annual-page-window table th:first-child {
+    padding-right: 30px;
+}
+.annual-page-window th {
+    font-family: var(--font);
+    font-size: var(--annual-font-size);
+    font-weight: normal;
+    text-align: left;
+    padding: 4px;
+}
 .annual-page-extra li {
     font-family: var(--font);
     font-size: var(--annual-font-size);
+}
+.annual-page-window a {
 }
 /* Annual Content /\ */
 
