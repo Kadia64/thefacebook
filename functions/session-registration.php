@@ -1,8 +1,8 @@
 <?php 
-$_PATH = '/projects/thefacebook/functions/scripts/';
-require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'session-handler.php';
-require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'account-manager.php';
-require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'sql-handler.php';
+$_PATH = '/projects/thefacebook/functions/';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/account-manager.php';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/database-handler.php';
 
 session_start();
 
@@ -31,7 +31,7 @@ switch ($exists) {
         $_SESSION['education-status'] =  $_POST['education-status'];
         $_SESSION['password'] = $_POST['password'];
         $_SESSION['password-salt'] = 'none';
-        Redirect('/pages/logout/RegisterAboutUser.php');
+        //Redirect('pages/logout/RegisterAboutUser.php');
         break;
 }
 

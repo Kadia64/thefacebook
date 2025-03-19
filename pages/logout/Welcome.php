@@ -1,4 +1,4 @@
-<?php 
+<?php
     $_PATH = '/projects/thefacebook/functions/';
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';

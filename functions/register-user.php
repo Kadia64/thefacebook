@@ -5,7 +5,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/account-manager.php';
 require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/cookies.php';
 
 
-
 session_start();
 unset($_SESSION['logged-out-session-id']);
 

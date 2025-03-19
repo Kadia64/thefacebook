@@ -2,6 +2,9 @@
     $_PATH = '/projects/thefacebook/functions/';
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/account-manager.php';
+
+    
     
     session_start();
     CheckTraversal();
@@ -34,6 +37,13 @@
                     </div>
                     <form method="POST" action="<?php echo $_PATH.'register-user.php'; ?>">
                         <div class="about-you-grid">
+
+                            <?php 
+
+                                DisplayRegisterAboutForm();
+                                
+
+                            ?>
                             <div>
                                 <p><b>Basic Info:</b></p>
                             </div>

@@ -1,4 +1,8 @@
 <?php 
+$_PATH = '/projects/thefacebook/functions/';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/account-manager.php';
+
 
 
 /* Static */
@@ -128,7 +132,10 @@ function DisplayLink($text, $page, $type) {
 /* Static */
 
 /* Dynamic */
-function DisplayRegisterAboutForm() {
+function DisplayRegisterAboutForm() {    
+    $fields_array = AccountManager::getUserKeys();
+
+
 
 }
 function DisplayProfileInformation() {

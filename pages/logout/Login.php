@@ -3,15 +3,9 @@
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/content.php';
     require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/session-handler.php';
 
-    require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/database-handler.php';
-
     session_start();
     CheckTraversal();
     CheckLoggedOutSessionID('/pages/logout/Login.php');
-        
-
-    SQLHandler::TEST_getTables();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

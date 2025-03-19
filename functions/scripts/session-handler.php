@@ -1,4 +1,6 @@
 <?php 
+$_PATH = '/projects/thefacebook/functions/';
+require_once $_SERVER['DOCUMENT_ROOT'].$_PATH.'scripts/cookies.php';
 
 const RELATIVE_PATH = '/projects/thefacebook/';
 
