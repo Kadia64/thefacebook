@@ -31,7 +31,7 @@ switch ($exists) {
         $_SESSION['education-status'] =  $_POST['education-status'];
         $_SESSION['password'] = $_POST['password'];
         $_SESSION['password-salt'] = 'none';
-        //Redirect('pages/logout/RegisterAboutUser.php');
+        Redirect('pages/logout/RegisterAboutUser.php');
         break;
 }
 

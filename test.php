@@ -1,10 +1,15 @@
-<?php 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-    $x = 5;
-    $y = 7;
+<form method="POST" action="<?php echo $_PATH.'register-user.php'; ?>">
+    <div><p><b>Basic Info:</b></p></div><div></div><div><label for="first-name-input">First Name:</label></div><div><input type="text" id="first-name-input" name="first-name" required></div><div><label for="last-name-input">Last Name:</label></div><div><input type="text" id="last-name-input" name="last-name" required></div><div><label for="sex-input">Sex:</label></div><div><select id="sex-input" name="sex"><option>Male</option><option>Female</option><option>Rather Not Say</option></select></div><div><label for="birthday-input">Birthday:</label></div><div><input type="date" id="birthday-input" name="birthday" ></div><div><label for="home-address-input">Home Address:</label></div><div><input type="text" id="home-address-input" name="home-address" ></div><div><label for="home-town-input">Home Town:</label></div><div><input type="text" id="home-town-input" name="home-town" ></div><div><label for="high-school-input">High School:</label></div><div><input type="text" id="high-school-input" name="high-school" ></div><div><label for="mobile-input">Mobile:</label></div><div><input type="text" id="mobile-input" name="mobile" ></div><div><label for="website-input">Website:</label></div><div><input type="url" id="website-input" name="website" ></div><div><p><b>Personal Info:</b></p></div><div></div><div><label for="looking-for-input">Looking For:</label></div><div><select id="looking-for-input" name="looking-for"><option>Friendship</option><option>Dating</option><option>A Relationship</option></select></div><div><label for="interested-in-input">Interested In:</label></div><div><select id="interested-in-input" name="interested-in"><option>Men</option><option>Women</option></select></div><div><label for="relationship-status-input">Relationship Status:</label></div><div><input type="text" id="relationship-status-input" name="relationship-status" ></div><div><label for="political-views-input">Political Views:</label></div><div><input type="text" id="political-views-input" name="political-views" ></div><div><label for="interests-input">Interests:</label></div><div><textarea id='interests-input' name='interests' rows=3></textarea></div><div><label for="favorite-music-input">Favorite Music:</label></div><div><textarea id='favorite-music-input' name='favorite-music' rows=3></textarea></div><div><label for="favorite-movies-input">Favorite Movies:</label></div><div><textarea id='favorite-movies-input' name='favorite-movies' rows=3></textarea></div><div><label for="about-me-input">About Me:</label></div><div><textarea id='about-me-input' name='about-me' rows=3></textarea></div>
+</form>
 
-    if ($x >= $y) {
-
-    }
-
-?>
+</body>
+</html>

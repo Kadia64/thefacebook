@@ -134,9 +134,41 @@ function DisplayLink($text, $page, $type) {
 /* Dynamic */
 function DisplayRegisterAboutForm() {    
     $fields_array = AccountManager::getUserKeys();
+    $i = 0;
 
+    foreach ($fields_array as $key => $value) {
+        $display_name = ucwords(str_replace('-', ' ', $key));
+        $input_type = $value;
 
+        // || 3   add later for testing
+        $required = ($i == 0 || $i == 1) ? ' required' : null;
+        
+        switch ($i) {
+            case 0:
+                echo '<div><p><b>Basic Info:</b></p></div><div></div>';
+                break;
+            case 9:
+                echo '<div><p><b>Personal Info:</b></p></div><div></div>';
+                break;
+        }
+        echo '<div><label for="'.$key.'-input">'.$display_name.':</label></div>';
 
+        if (!is_array($input_type) && $value != 'textarea') {
+            $input_field = '<div><input type="'.$input_type.'" id="'.$key.'-input" name="'.$key.'"'.$required.'></div>';
+            echo $input_field;
+        } else if (is_array($input_type)) {
+            $select = '<div><select id="'.$key.'-input" name="'.$key.'">';
+            foreach ($input_type as $option) {
+                $select .= '<option>'.$option.'</option>';
+            }
+            $select .= '</select></div>';
+
+            echo $select;
+        } else {
+            echo "<div><textarea id='".$key."-input' name='".$key."' rows=3></textarea></div>";
+        }
+        ++$i;
+    }
 }
 function DisplayProfileInformation() {
 
